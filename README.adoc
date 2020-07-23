@@ -1,0 +1,13 @@
+= A simple example for Java App build in a Dockerfile.
+
+A simple example for building a Java App in docker.
+This example contains a very simple spring boot application build with maven.
+
+== Build and start
+
+Just enter the following code in a terminal in the root of the project:
+
+    docker-compose up --build app
+
+Wait for build and startup finished.
+Then open http://localhost:8080/.
