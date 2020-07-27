@@ -1,6 +1,8 @@
 # first container to build the application
 FROM maven:3.6.3-jdk-11 AS BUILDER
 
+WORKDIR /BUILD/
+
 COPY ./ ./
 
 RUN mvn package -DskipTests
